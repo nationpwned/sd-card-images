@@ -1,4 +1,4 @@
-FROM public.ecr.aws/lts/ubuntu:22.04_stable
+FROM public.ecr.aws/ubuntu/ubuntu:24.04
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get --assume-yes \
@@ -20,7 +20,6 @@ RUN apt-get update && \
                     pigz \
                     bison \
                     flex \
-                    python2-dev \
                     python3-dev \
                     python3-pkg-resources \
                     python3-pyelftools \
